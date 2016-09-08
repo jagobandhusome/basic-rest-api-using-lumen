@@ -12,7 +12,7 @@
 /api/v1/book/1/delete to delete a book. Post request same as create
 
 
-That's a basic RESTfull API example. I will try to add OAuth 2.0 authentication very soon. :)
+That's a basic RESTfull API example. I will try to add authentication very soon. :)
 
 
 
