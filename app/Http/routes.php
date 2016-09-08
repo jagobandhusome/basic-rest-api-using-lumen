@@ -22,9 +22,9 @@ $app->group(['prefix' => 'api/v1','namespace' => 'App\Http\Controllers'], functi
   
     $app->get('book/{id}','BookController@getbook');
       
-    $app->post('book','BookController@createBook');
+    $app->post('book/create','BookController@createBook');
       
-    $app->put('book/{id}','BookController@updateBook');
+    $app->put('book/{id}/update','BookController@updateBook');
       
-    $app->delete('book/{id}','BookController@deleteBook');
+    $app->delete('book/{id}/delete','BookController@deleteBook');
 });
