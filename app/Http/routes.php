@@ -12,5 +12,19 @@
 */
 
 $app->get('/', function () use ($app) {
-    return $app->version();
+    return 'RESTfull API example';
+});
+
+
+$app->group(['prefix' => 'api/v1','namespace' => 'App\Http\Controllers'], function($app)
+{
+    $app->get('book','BookController@index');
+  
+    $app->get('book/{id}','BookController@getbook');
+      
+    $app->post('book','BookController@createBook');
+      
+    $app->put('book/{id}','BookController@updateBook');
+      
+    $app->delete('book/{id}','BookController@deleteBook');
 });
